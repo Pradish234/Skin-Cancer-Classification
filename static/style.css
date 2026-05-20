@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+input[type="file"] {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    background: white;
+
+    color: black;
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.uploaded-image {
+    width: 100%;
+    max-width: 300px;
+
+    border-radius: 12px;
+
+    margin: 20px 0;
+
+    border: 3px solid #334155;
+}
+
+.result-box {
+    margin-top: 20px;
+}
+
+.result-box h2 {
+    margin: 15px 0;
+}
+
+.Benign {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.Malignant {
+    color: #ef4444;
+    font-weight: bold;
+}
