@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card result-card">
+
+            <h1>Prediction Result</h1>
+
+            <img src="{{ image }}"
+                 alt="Uploaded Image"
+                 class="uploaded-image">
+
+            <div class="result-box">
+
+                <h2>
+                    Detected Type:
+                    <span>{{ predicted_class }}</span>
+                </h2>
+
+                <h2>
+                    Result:
+                    <span class="{{ result_class }}">
+                        {{ result_class }}
+                    </span>
+                </h2>
+
+            </div>
+
+            <a href="/">
+                <button>
+                    Try Another Image
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
