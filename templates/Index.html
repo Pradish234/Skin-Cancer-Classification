@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Cancer Detection</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>AI Skin Cancer Detection</h1>
+
+            <p class="subtitle">
+                Upload a skin lesion image for AI-based classification.
+            </p>
+
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+
+                <input type="file"
+                       name="image"
+                       accept=".jpg,.jpeg,.png"
+                       required>
+
+                <button type="submit">
+                    Analyze Image
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
